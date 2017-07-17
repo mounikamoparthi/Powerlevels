@@ -1,3 +1,14 @@
-<p>
-  power works!
-</p>
+<h3> PowerComponent </h3>
+  <form #formData='ngForm' (submit)='power(formData)'>
+      Initial Power Level:
+      <input type = 'number' step ="1" value ="0" name = 'cnumber' ngModel
+      required #cnumber ='ngModel'
+      placeholder = 'Enter between 1-100'>
+      <input type='submit' value = "Calculate Powers" >
+  </form>
+<app-human [childBaseNumber]="num"></app-human>
+<app-saiyan [childBaseNumber]="num"></app-saiyan>
+<app-supersaiyan [childBaseNumber]="num"></app-supersaiyan>
+<app-supersaiyantwo [childBaseNumber]="num"></app-supersaiyantwo>
+<app-supersaiyanthree [childBaseNumber]="num"></app-supersaiyanthree>
+<app-supersaiyanfour [childBaseNumber]="num"></app-supersaiyanfour>

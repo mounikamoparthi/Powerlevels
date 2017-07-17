@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-supersaiyan',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./supersaiyan.component.css']
 })
 export class SupersaiyanComponent implements OnInit {
-
+ @Input() childBaseNumber;
   constructor() { }
 
   ngOnInit() {

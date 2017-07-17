@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input,  OnChanges, SimpleChanges, SimpleChange} from '@angular/core';
 
 @Component({
   selector: 'app-human',
   templateUrl: './human.component.html',
   styleUrls: ['./human.component.css']
 })
-export class HumanComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class HumanComponent {
+ @Input() childBaseNumber;
+  constructor() {}
 
 }
