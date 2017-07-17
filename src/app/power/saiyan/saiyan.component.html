@@ -2,5 +2,6 @@
 
   <div class = "design">
       <h3>Siyan Component</h3>
-  <h2>Powerlevel: {{childBaseNumber.baseNumber*10|json}}</h2>
+  <h2>Powerlevel: {{childBaseNumber.saiyanNumber|json}}</h2>
+  <h4 *ngIf= 'childBaseNumber.saiyanNumber > 10'> Boost </h4>
 </div>

@@ -11,6 +11,7 @@ export class PowerComponent implements OnInit {
   power(formData: NgForm) {
     console.log(formData.value.cnumber);
     this.num.baseNumber = formData.value.cnumber;
+    this.num.updatePower();
   }
   constructor() { }
 
